@@ -20,6 +20,12 @@ public class DbController {
 
     @RequestMapping("/now")
     public @ResponseBody String now() throws Exception{
-        return dbService.getDual();
+        String test = dbService.getDual();
+        return test;
+    }
+    @RequestMapping("/test")
+    public String test() throws Exception{
+        String test = dbService.getDual();
+        return test;
     }
 }
